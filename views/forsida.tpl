@@ -7,7 +7,11 @@
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
 <body>
-    <header><h1>Bensín.is</h1></header>
-    <hr>
+    <img src="/static/bakgrunnur.jpg" alt="background">
+    
+    <div class="container">
+        <header><h1>Bensín.is</h1></header>
+        <hr>
+    </div>  
 </body>
 </html>
