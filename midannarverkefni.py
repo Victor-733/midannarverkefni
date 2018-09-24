@@ -10,5 +10,10 @@ with urllib.request.urlopen("http://apis.is/petrol/") as url:
 def index():
     return template("forsida.tpl", data=data)
 
+#########################################################################
+
+@route("/static/<skra>")
+def static(skra):
+    return static_file(skra, root="./static")
 
 run(host="0.0.0.0", port=argv[1], debug=True, reloader=True)
