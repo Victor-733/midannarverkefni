@@ -7,11 +7,20 @@
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
 <body>
-    <img src="/static/bakgrunnur.jpg" alt="background">
-    
-    <div class="container">
-        <header><h1>Bensín.is</h1></header>
-        <hr>
+    <h1>Söluaðilar eldsneytis á Íslandi</h1>
+    <div class="wrapper">
+    <%
+        le = len(data["results"])
+
+        for i in range(le -1):
+
+        if (data["results"][i]["company"] != data["results"][i + 1]["company"]):
+    %>
+        <div class="box">
+            <a href="/company/{{data['results'][i]['company']}}">{{data["results"][i]["company"]}}</a>
+        </div>
+        <% end
+    end %>
     </div>  
 </body>
 </html>
