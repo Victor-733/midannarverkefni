@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/styles_2.css" />
 </head>
 <body>
+    <header>
+        <h1>Stöðvar</h1>
+    </header>
     <table class="wrapper">
         <tr>
             <th>Fyrirtæki</th>
@@ -28,7 +31,7 @@
         <% end
         end %>
     </table>
-    
+
     <h3>Fjöldi stöðva: {{cnt}}</h3>
     <footer>
         <p>Victor Wahid Ívarsson &copy;</p>
