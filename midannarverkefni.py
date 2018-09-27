@@ -11,8 +11,12 @@ def index():
     return template("forsida.tpl", data=data)
 
 @route("/company/<company>")
-def index(company)
-    return template("company", data=data, co=company)
+def index(company):
+    return template("company.tpl", data=data, co=company)
+
+@route("/moreinfo/<key>")
+def index(key):
+    return template('moreinfo.tpl', data=data, k=k)
 
 #########################################################################
 
