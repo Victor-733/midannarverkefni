@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/styles_2.css" />
 </head>
 <body>
-    <table>
+    <table class="wrapper">
         <tr>
             <th>Fyrirtæki</th>
             <th>Staður</th>
+            <th>Verð Bensín 95</th>
+            <th>Verð Dísel</th>
         </tr>
         <%
             cnt = 0
@@ -20,10 +22,13 @@
             <tr>
                 <td><a href="/moreinfo/{{i['key']}}">{{i['company']}}</a></td>
                 <td>{{i['name']}}</td>
+                <td>{{i["bensin95"]}}kr.</td>
+                <td>{{i["diesel"]}}kr.</td>
             </tr>
         <% end
         end %>
     </table>
+    
     <h3>Fjöldi stöðva: {{cnt}}</h3>
     <footer>
         <p>Victor Wahid Ívarsson &copy;</p>

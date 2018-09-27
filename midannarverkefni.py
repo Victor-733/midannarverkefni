@@ -16,7 +16,7 @@ def index(company):
 
 @route("/moreinfo/<key>")
 def index(key):
-    return template('moreinfo.tpl', data=data, k=k)
+    return template('moreinfo.tpl', data=data, k=key)
 
 #########################################################################
 

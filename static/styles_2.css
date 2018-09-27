@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    padding: 1em;
+    margin-top: 1em;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 30em;
+}
