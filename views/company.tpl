@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/styles.css" />
 </head>
 <body>
     <table>
@@ -18,8 +18,15 @@
                 cnt += 1
         %>
             <tr>
-                <td><a href="/moreinfo/{{i['key']}}></a></td>
+                <td><a href="/moreinfo/{{i['key']}}">{{i['company']}}</a></td>
+                <td>{{i['name']}}</td>
             </tr>
+        <% end
+        end %>
     </table>
+    <h3>Fjöldi stöðva: {{cnt}}</h3>
+    <footer>
+        <p>Victor Wahid Ívarsson &copy;</p>
+    </footer>
 </body>
 </html>

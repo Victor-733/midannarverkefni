@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
 <body>
-    <h1>Söluaðilar eldsneytis á Íslandi</h1>
+    <header>
+        <h1>Söluaðilar eldsneytis á Íslandi</h1>
+    </header>
     <div class="wrapper">
     <%
         le = len(data["results"])
