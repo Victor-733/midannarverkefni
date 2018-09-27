@@ -24,5 +24,8 @@
         <% end
     end %>
     </div>  
+    <footer>
+        <p>Victor Wahid Ívarsson &copy; 2018</p>
+    </footer>
 </body>
 </html>
