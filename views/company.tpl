@@ -18,7 +18,7 @@
                 cnt += 1
         %>
             <tr>
-                <td><a href="/moreinfo/"></a></td>
+                <td><a href="/moreinfo/{{i['key']}}></a></td>
             </tr>
     </table>
 </body>

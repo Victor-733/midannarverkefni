@@ -10,6 +10,10 @@ with urllib.request.urlopen("http://apis.is/petrol/") as url:
 def index():
     return template("forsida.tpl", data=data)
 
+@route("/company/<company>")
+def index(company)
+    return template("company", data=data, co=company)
+
 #########################################################################
 
 @route("/static/<skra>")
