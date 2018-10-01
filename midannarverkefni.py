@@ -24,4 +24,8 @@ def index(key):
 def static(skra):
     return static_file(skra, root="./static")
 
+@error(404)
+def villa(error):
+    return "<h2 'style=color:blue'>Error 404: See, I pulled a lil sneaky on ya</h2>"
+
 run(host="0.0.0.0", port=argv[1], debug=True, reloader=True)

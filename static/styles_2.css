@@ -20,6 +20,7 @@ header {
 .wrapper {
     margin: 0 auto;
     width: 30em;
+    padding-bottom: 3em;
 }
 h3 {
     display: flex;

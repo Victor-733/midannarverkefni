@@ -16,11 +16,11 @@ header {
     width: 60em;
 }
 a {
-    line-height: 4em;
+    line-height: 3em;
     text-decoration: none;
     background-color: rgb(210, 210, 210);
     width: 100%;
-    margin: 1em;
+    margin: 0.5em;
     border-radius: 5px;
     text-align: center;
     color: black;
@@ -37,4 +37,17 @@ footer {
     color: white;
     padding: 1em;
     margin-top: 1em;
+}
+.last-updated {
+    text-align: center;
+    font-style: italic;
+}
+.myndir {
+    display: flex;
+    flex-flow: row;
+}
+.myndir img {
+    width: 10em;
+    max-height: 10em;
+    margin: 3px;
 }

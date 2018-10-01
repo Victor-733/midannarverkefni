@@ -10,11 +10,20 @@
     <header>
         <h1>Söluaðilar eldsneytis á Íslandi</h1>
     </header>
+    <div class="myndir">
+        <img src="/static/atlantsolia.svg" alt="atlantsolia">
+        <img src="/static/costco.svg" alt="costco">
+        <img src="/static/daelan.svg" alt="daelan">
+        <img src="/static/n1.svg" alt="n1">
+        <img src="/static/ob.svg" alt="ob">
+        <img src="/static/olis.svg" alt="olis">
+        <img src="/static/orkan.svg" alt="orkan">
+    </div>
     <div class="wrapper">
     <%
         le = len(data["results"])
 
-        for i in range(le -1):
+        for i in range(le-1):
 
         if (data["results"][i]["company"] != data["results"][i + 1]["company"]):
     %>
@@ -23,7 +32,10 @@
         </div>
         <% end
     end %>
-    </div>  
+    </div>
+    <div class="last-updated">
+        <p>síðast uppfært: {{data["timestampPriceChanges"]}}</p>
+    </div>
     <footer>
         <p>Victor Wahid Ívarsson &copy; 2018</p>
     </footer>

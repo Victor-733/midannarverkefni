@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 30em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+header {
+    padding: 1em;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+footer {
+    text-align: center;
+}
+hr {
+    width: 60em;
+}
