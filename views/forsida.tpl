@@ -33,6 +33,26 @@
         <% end
     end %>
     </div>
+    <%
+        minpriceP = 2000.0
+        minpriceD = 2000.0
+
+        le = len(data["results"])
+        c = 0
+        for i in range(le -1):
+            c=i
+            if minpriceP > data["results"][i]["bensin95"]:
+                minpriceP = data["results"][i]["bensin95"]
+                companyP = data["results"][i]["company"]
+            end
+
+        if (data["results"][i]["company"] != data["results"][i-1]["company"]):
+        %>
+
+    <div>
+        <h3>Besta Verðið:</h3>
+        <h4>Bensín 95 oktan: <i>{{minpriceP}}</i>kr. er hjá: {{companyP}}</h4>
+    </div>
     <div class="last-updated">
         <p>síðast uppfært: {{data["timestampPriceChanges"]}}</p>
     </div>
