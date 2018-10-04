@@ -63,8 +63,14 @@
         end
     end
     %>
+    <%
+        import datetime
+        t = data["timestampPriceCheck"]
+        t = t [:19]
+        d = datetime.datetime.strptime(t, '%Y-%m-%dT%H:%M:%S')
+    %>
     <div class="last-updated">
-        <p>síðast uppfært: {{data["timestampPriceChanges"]}}</p>
+        <p>síðast uppfært: {{d.strftime('%d:%m-%Y-Kl.%H:%M')}}</p>
     </div>
     <footer>
         <p>Victor Wahid Ívarsson &copy; 2018</p>

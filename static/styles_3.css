@@ -20,3 +20,12 @@ footer {
 hr {
     width: 60em;
 }
+.kort {
+    list-style: none;
+    border: 1px solid black;
+    padding: 0;
+    padding: 1em;
+}
+li {
+    list-style: none;
+}

@@ -18,6 +18,11 @@
             <h3>Staður: {{i['name']}}</h3>
             <h3>Bensín 95: {{i['bensin95']}}kr.</h3>
             <h3>Dísel: {{i['diesel']}}kr.</h3>
+            <ul class="kort">
+                <li>Lengdargráða: {{i["geo"]["lat"]}}</li>
+                <li>Breiddargráða: {{i["geo"]["lon"]}}</li>
+                <li><a href="https://google.com/maps/@{{i['geo']['lat']}},{{i['geo']['lon']}},18z" target="_blank">Link á kort</a></li>
+            </ul>
         <% end
         end %>
     </div>
