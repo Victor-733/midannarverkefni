@@ -25,7 +25,7 @@
 
         for i in range(le-1):
 
-        if (data["results"][i]["company"] != data["results"][i + 1]["company"]):
+        if (data["results"][i]["company"] != data["results"][i - 1]["company"]):
     %>
         <div class="box">
             <a href="/company/{{data['results'][i]['company']}}">{{data["results"][i]["company"]}}</a>
@@ -46,13 +46,23 @@
                 companyP = data["results"][i]["company"]
             end
 
-        if (data["results"][i]["company"] != data["results"][i-1]["company"]):
-        %>
+            if minpriceD > data["results"][i]["diesel"]:
+                minpriceD = data["results"][i]["diesel"]
+                companyD = data["results"][i]["company"]
+            end
+    %>
+    <% end
+    %>
 
-    <div>
+    <div class="besta-verd">
         <h3>Besta Verðið:</h3>
         <h4>Bensín 95 oktan: <i>{{minpriceP}}</i>kr. er hjá: {{companyP}}</h4>
+        <h4>Dísel: <i>{{minpriceD}}</i>kr. er hjá: {{companyD}}</h4>
     </div>
+    <%
+        end
+    end
+    %>
     <div class="last-updated">
         <p>síðast uppfært: {{data["timestampPriceChanges"]}}</p>
     </div>

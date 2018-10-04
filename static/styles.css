@@ -45,9 +45,19 @@ footer {
 .myndir {
     display: flex;
     flex-flow: row;
+    justify-content: center;
 }
 .myndir img {
     width: 10em;
     max-height: 10em;
     margin: 3px;
+}
+.besta-verd {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background-color: crimson;
+    margin: 7em;
+    margin-bottom: 0;
+    border-radius: 10px;
 }
